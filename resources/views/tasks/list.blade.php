@@ -46,11 +46,11 @@
                         <td>Unassigned</td>
                         @endif
                     <td>
-                        <a href="{{ route('tasks.edit', $task) }}" class="btn btn-primary">Edit</a>
+                        <a href="{{ route('tasks.edit', $task) }}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                         <form action="{{ route('tasks.destroy', $task) }}" method="POST" class="d-inline">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         </form>
                     </td>
             </tr>
